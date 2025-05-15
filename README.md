@@ -69,7 +69,7 @@ To build for production, run:
 npm run build
 ```
 
-Deployment can be done easily on platforms like Vercel, Netlify, or GitHub Pages.
+Deployment is done using Vercel for seamless frontend hosting.
 
 Feel free to enhance the project by connecting to a backend API for real data persistence and authentication.
 
