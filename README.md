@@ -1,70 +1,72 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ship Maintenance Dashboard
 
-## Available Scripts
+## Setup and Installation
 
-In the project directory, you can run:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mailaganivenu/ship-maintenance-dashboard.git
+   ```
 
-### `npm start`
+2. Navigate into the project directory:
+   ```bash
+   cd ship-maintenance-dashboard
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm test`
+Open your browser and go to http://localhost:3000 to view the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Application Architecture Overview
 
-### `npm run build`
+- **Frontend**: Built with React functional components and hooks.
+- **State Management**: React Context API is used for managing authentication state and global data.
+- **Styling**: Tailwind CSS for responsive and modern UI design.
+- **Data Persistence**: Uses localStorage to save user sessions, ships, jobs, and other state data.
+- **Routing**: React Router (if implemented) manages navigation within the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Main Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Authentication system with role-based access (Admin, Inspector, Engineer).
+- CRUD operations for Ships and linked Components.
+- Maintenance Jobs management with status filters.
+- Interactive Calendar view for scheduling.
+- Notifications panel for updates.
+- Dashboard with KPIs and statistics.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Known Issues or Limitations
 
-### `npm run eject`
+- Data persistence is limited to localStorage — no backend or database integration yet.
+- Authentication is simulated; no real security or user management backend.
+- No real-time collaboration or multi-user sync.
+- Basic error handling in forms and inputs.
+- UI could be further enhanced with animations and better responsiveness.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technical Decisions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React was chosen for its component-based architecture and strong ecosystem.
+- Tailwind CSS was used for quick, consistent styling without writing custom CSS.
+- localStorage was leveraged to persist user data without backend dependencies, suitable for demo and testing.
+- Modularized codebase to keep components reusable and maintainable.
+- Role management and authentication are simulated to meet assignment requirements efficiently.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Additional Notes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To build for production, run:
+```bash
+npm run build
+```
 
-## Learn More
+Deployment can be done easily on platforms like Vercel, Netlify, or GitHub Pages.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Feel free to enhance the project by connecting to a backend API for real data persistence and authentication.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Thank you for reviewing the Ship Maintenance Dashboard project!**
