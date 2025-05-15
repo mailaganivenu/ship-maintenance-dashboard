@@ -1,5 +1,9 @@
 
 # Ship Maintenance Dashboard
+## Live Demo
+
+Check out the live app here:  
+https://ship-maintenance-dashboard-eta.vercel.app/
 
 ## Setup and Installation
 
